@@ -5,7 +5,8 @@ app = Flask(__name__)
 @app.route('/')
 
 def index1():
-    return "<h1>hello</h1>"
+    # return "<h1>hello</h1>"
+    return render_template("hello.html")
 
 @app.route('/user/')
 
