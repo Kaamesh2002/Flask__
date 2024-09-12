@@ -1,0 +1,24 @@
+<h1>hello</h1>
+
+<p>welcome {{first_name}} </p>
+
+<p>{{stuff|safe}}</p>
+<!-- <p>{{stuff|striptags}}</p> -->
+<!-- <p>{{stuff|title}}</p> -->
+
+<h3>Favourite pizza:</h3>
+
+<!-- {% for toppings in favourite_pizza %}
+    {{ toppings }}<br>
+{% endfor %} -->
+
+{% for toppings in favourite_pizza %}
+    {% if toppings == 41 %}
+        {{ toppings + 200 }}<br>
+    {% else %}
+        {{ toppings }}<br>
+    {% endif %}
+{% endfor %}
+
+<br/>
+{{ favourite_pizza.2 }}
